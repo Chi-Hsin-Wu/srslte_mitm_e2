@@ -1,0 +1,35 @@
+successfulOutcome : {
+  procedureCode 17,
+  criticality reject,
+  value S1SetupResponse: {
+    protocolIEs {
+      {
+        id 61,
+        criticality ignore,
+        value MMEname: "srsmme01"
+      },
+      {
+        id 105,
+        criticality reject,
+        value ServedGUMMEIs: {
+          {
+            servedPLMNs {
+              '00F110'H
+            },
+            servedGroupIDs {
+              '0100'H
+            },
+            servedMMECs {
+              '1A'H
+            }
+          }
+        }
+      },
+      {
+        id 87,
+        criticality ignore,
+        value RelativeMMECapacity: 255
+      }
+    }
+  }
+}
